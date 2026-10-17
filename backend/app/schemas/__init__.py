@@ -1,0 +1,63 @@
+"""Schemas package initialization."""
+from app.schemas.user import (
+    UserRole,
+    UserBase,
+    UserCreate,
+    UserLogin,
+    UserUpdate,
+    UserResponse,
+)
+from app.schemas.token import Token, TokenPayload
+from app.schemas.accident import (
+    AccidentSeverity,
+    AccidentBase,
+    AccidentCreate,
+    AccidentUpdate,
+    AccidentResponse,
+    AccidentNearbyResponse,
+    PaginatedAccidentResponse,
+    GeoJSONGeometry,
+    GeoJSONFeature,
+    GeoJSONFeatureCollection,
+)
+from app.schemas.hotspot import (
+    HotspotRiskLevel,
+    HotspotSource,
+    HotspotBase,
+    HotspotCreate,
+    HotspotUpdate,
+    HotspotResponse,
+    HotspotNearbyResponse,
+    HotspotDetailResponse,
+    PaginatedHotspotResponse,
+)
+
+__all__ = [
+    "UserRole",
+    "UserBase",
+    "UserCreate",
+    "UserLogin",
+    "UserUpdate",
+    "UserResponse",
+    "Token",
+    "TokenPayload",
+    "AccidentSeverity",
+    "AccidentBase",
+    "AccidentCreate",
+    "AccidentUpdate",
+    "AccidentResponse",
+    "AccidentNearbyResponse",
+    "PaginatedAccidentResponse",
+    "GeoJSONGeometry",
+    "GeoJSONFeature",
+    "GeoJSONFeatureCollection",
+    "HotspotRiskLevel",
+    "HotspotSource",
+    "HotspotBase",
+    "HotspotCreate",
+    "HotspotUpdate",
+    "HotspotResponse",
+    "HotspotNearbyResponse",
+    "HotspotDetailResponse",
+    "PaginatedHotspotResponse",
+]
